@@ -1,0 +1,16 @@
+{
+  "name": "fullstack-template-app",
+  "private": true,
+  "workspaces": [
+    "server/",
+    "web/"
+  ],
+  "scripts": {
+    "start:server": "yarn workspace @fullstack/server start",
+    "start:web": "yarn workspace @fullstack/web start",
+    "dev": "concurrently \"yarn start:server\" \"yarn start:web\""
+  },
+  "dependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
